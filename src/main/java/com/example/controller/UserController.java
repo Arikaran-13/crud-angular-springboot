@@ -21,7 +21,7 @@ public class UserController {
         return userService.getUserById(id);
     }
 
-    @PostMapping("/register")
+    @PostMapping("/register") //demo app
     public ResponseEntity<User> createUser(@RequestBody User user)
     {
         return userService.registerUser(user);
